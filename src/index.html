@@ -1,13 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A guide to exploring Los Angeles." />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Discover Los Angeles</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <a class="brand" href="#home">LA</a>
+
+        <button class="menu-toggle" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#explore">Explore</a></li>
+          <li><a class="nav-link" href="#neighborhoods">Neighborhoods</a></li>
+          <li><a class="nav-link" href="#highlights">Highlights</a></li>
+          <li><a class="nav-link" href="#watch">Watch</a></li>
+          <li><a class="nav-link" href="#plan">Plan</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow">California, USA</p>
+
+        <h1>Discover Los Angeles</h1>
+
+        <p class="hero-copy">
+          Where ocean breeze, city lights, and endless ambition meet.
+        </p>
+
+        <a class="button button-primary" href="#explore">
+          Start exploring
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section explore" id="explore">
+        <div class="section-content">
+          <p class="eyebrow">At a glance</p>
+
+          <h2>Countless ways to explore LA</h2>
+
+          <p class="section-intro">
+            From urban skylines to ocean horizons, every side of LA feels different.
+          </p>
+
+          <div class="stat-grid">
+            <article class="stat-card">
+              <p class="stat-label">Coast</p>
+              <h3>Ocean mornings</h3>
+              <p>
+                Find beach paths, quiet coves, and sunset views.
+              </p>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-label">City</p>
+              <h3>Creative energy</h3>
+              <p>
+                Explore galleries, street food, film history, and more.
+              </p>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-label">Hills</p>
+              <h3>Wide-open views</h3>
+              <p>
+                Step above the city to see the lights, the ocean, and the cityscape.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section neighborhoods" id="neighborhoods">
+        <div class="section-content">
+          <p class="eyebrow">Explore neighborhoods</p>
+
+          <h2>Discover LA's diverse neighborhoods</h2>
+
+          <div class="carousel">
+            <button
+              class="carousel-button carousel-button-prev"
+              type="button"
+            >
+              &#8592;
+            </button>
+
+            <div class="carousel-window">
+              <div class="carousel-track">
+                <article class="carousel-slide is-active">
+                  <div class="slide-image slide-image-santa-monica"></div>
+
+                  <div class="slide-content">
+                    <p class="slide-number">01 / 03</p>
+                    <h3>Santa Monica</h3>
+                    <p>
+                      Ocean air, sunset walks, and restaurants at the edge of the city.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="carousel-slide">
+                  <div class="slide-image slide-image-hollywood"></div>
+
+                  <div class="slide-content">
+                    <p class="slide-number">02 / 03</p>
+                    <h3>Hollywood</h3>
+                    <p>
+                      Movie history, hillside views, and creative energy.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="carousel-slide">
+                  <div class="slide-image slide-image-downtown"></div>
+
+                  <div class="slide-content">
+                    <p class="slide-number">03 / 03</p>
+                    <h3>Downtown LA</h3>
+                    <p>
+                      Historic buildings, galleries, food halls, and more.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button
+              class="carousel-button carousel-button-next"
+              type="button"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section highlights" id="highlights">
+        <div class="section-content">
+          <p class="eyebrow">Make it memorable</p>
+
+          <h2>Three LA essentials</h2>
+
+          <div class="highlight-grid">
+            <article class="highlight-card">
+              <div class="icon-circle">&#9788;</div>
+
+              <h3>Chase a viewpoint</h3>
+
+              <p>
+                See the city, the Pacific, and the mountains from one of LA's viewpoints.
+              </p>
+
+              <button
+                class="text-button modal-trigger"
+                type="button"
+                data-modal="viewpoints-modal"
+              >
+                See viewpoints
+              </button>
+            </article>
+
+            <article class="highlight-card">
+              <div class="icon-circle">&#9825;</div>
+
+              <h3>Find your flavor</h3>
+
+              <p>
+                Explore food traditions from around the world at neighborhood restaurants and markets.
+              </p>
+
+              <button
+                class="text-button modal-trigger"
+                type="button"
+                data-modal="food-modal"
+              >
+                See food stops
+              </button>
+            </article>
+
+            <article class="highlight-card">
+              <div class="icon-circle">&#9734;</div>
+
+              <h3>Stay after dark</h3>
+
+              <p>
+                Catch a concert, browse a gallery, or watch the city come to life.
+              </p>
+
+              <button
+                class="text-button modal-trigger"
+                type="button"
+                data-modal="nightlife-modal"
+              >
+                See night ideas
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section watch" id="watch">
+        <div class="section-content video-layout">
+          <div>
+            <p class="eyebrow">See it in motion</p>
+
+            <h2>A few seconds of LA</h2>
+
+            <p class="section-intro">
+              Take in the rhythm of Los Angeles, from its streets to its skyline.
+            </p>
+          </div>
+
+          <div class="video-frame">
+            <video class="city-video" controls preload="metadata">
+              <source src="assets/13125430_1920_1080_30fps.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section plan" id="plan">
+        <div class="section-content">
+          <p class="eyebrow">Before you go</p>
+
+          <h2>Plan a day that feels like yours</h2>
+
+          <div class="plan-grid">
+            <article>
+              <h3>Morning</h3>
+              <p>
+                Start with coffee and a walk near the coast before the city gets busy.
+              </p>
+            </article>
+
+            <article>
+              <h3>Afternoon</h3>
+              <p>
+                Pick one neighborhood and give it time: museums, shops, and lunch await.
+              </p>
+            </article>
+
+            <article>
+              <h3>Evening</h3>
+              <p>
+                End the day above the city or beside the water as the sky turns gold.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <a class="brand" href="#home">LA</a>
+
+        <p>Discover Los Angeles through its streets, landmarks, and neighborhoods.</p>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/discoverla/?hl=en"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+          <a href="https://www.youtube.com/losangeles"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a>
+          <a href="https://x.com/discoverLA"><i class="fa-brands fa-x-twitter"></i><span>X</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      id="viewpoints-modal"
+      hidden
+    >
+      <div class="modal-panel">
+        <button class="modal-close" type="button">
+          &times;
+        </button>
+
+        <p class="eyebrow">Views</p>
+
+        <h2>Look out over LA</h2>
+
+        <p>
+          Griffith Observatory, Baldwin Hills Scenic Overlook, and Kenneth Hahn State Recreation Area offer different perspectives on the city.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="modal"
+      id="food-modal"
+      hidden
+    >
+      <div class="modal-panel">
+        <button class="modal-close" type="button">
+          &times;
+        </button>
+
+        <p class="eyebrow">Food</p>
+
+        <h2>Taste the city</h2>
+
+        <p>
+          Build a food walk around Grand Central Market, Koreatown, Little Tokyo, or one of the city's many taco stands.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="modal"
+      id="nightlife-modal"
+      hidden
+    >
+      <div class="modal-panel">
+        <button class="modal-close" type="button">
+          &times;
+        </button>
+
+        <p class="eyebrow">After dark</p>
+
+        <h2>Keep exploring</h2>
+
+        <p>
+          Look for live music in Echo Park, a late showing at a historic theater, or city views from a rooftop.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
